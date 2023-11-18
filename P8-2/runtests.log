@@ -1,0 +1,8 @@
+build - build xv6 using make
+test1a - Tests getnextpid() after one fork call
+test1b - Tests getnextpid() after a child process exits
+test1c - Tests getnextpid() after forking N number of child processes
+test2a - Tests getprocstate() for run process
+test2b - Tests getprocstate() for runble process
+test2c - Tests getprocstate() for zombie process
+test2d - Tests getprocstate() with negative byte size

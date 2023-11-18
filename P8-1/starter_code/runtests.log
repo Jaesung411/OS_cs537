@@ -1,0 +1,28 @@
+starting build
+
+**********************************************************************
+
+Test build
+build xv6 using make
+
+**********************************************************************
+Trying to build project using make
+make
+cc -Wall -Werror -lpthread -g -c server.c
+cc -Wall -Werror -lpthread -g -c udp.c
+cc -Wall -Werror -lpthread -g -c server_functions.c
+cc -Wall -Werror -lpthread -g -o server server.o udp.o server_functions.o
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: server] Error 1
+
+
+test build FAILED
+ (build xv6 using make)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+Skipped 10 tests.
+To keep testing after failing a test, use flag '-c' or '--continue'
